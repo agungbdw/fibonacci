@@ -9,11 +9,12 @@ public class Fibonacci {
        
         System.out.println("Masukkan Bilangan : ");
         int number = new Scanner(System.in).nextInt();
-      
-        //printing Fibonacci series upto number
+        int total=0;
         for(int i=1; i<=number; i++){
-            System.out.print(fibonacci(i) +" ");
+            total+=fibonacci(i);
+            
         }
+        System.out.print(total);
     } 
  
     public static int fibonacci(int number){
